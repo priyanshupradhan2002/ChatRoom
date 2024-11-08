@@ -8,7 +8,7 @@ WORKDIR /app
 COPY pom.xml .
 
 # Copy the entire project into the container
-COPY src ./src
+COPY chatapp ./src
 
 # Build the application
 RUN ./mvnw clean install -DskipTests
