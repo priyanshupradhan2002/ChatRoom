@@ -5,7 +5,7 @@ FROM openjdk:17-jdk-slim as builder
 WORKDIR /app
 
 # Copy the Maven build file into the container (if using Maven)
-COPY pom.xml .
+COPY chatapp/pom.xml .
 
 # Copy the entire project into the container
 COPY chatapp ./src
