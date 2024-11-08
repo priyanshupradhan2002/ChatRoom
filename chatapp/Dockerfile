@@ -12,4 +12,4 @@ COPY chatapp ./src
 RUN apt-get update && apt-get install -y maven
 
 # Build the application using Maven
-RUN mvn clean install -DskipTests
+
