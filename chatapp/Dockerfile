@@ -10,9 +10,6 @@ COPY chatapp/pom.xml .
 # Copy the entire project into the container
 COPY chatapp ./src
 
-# Build the application
-RUN ./mvnw clean install -DskipTests
-
 # Create the second stage to create the final image
 FROM openjdk:23-jdk-slim
 
